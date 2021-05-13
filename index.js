@@ -21,12 +21,12 @@ const {
 
 // Load config
 dotenv.config({ path: './config/config.env' });
-/*const PORT =
+const PORT =
   process.env.MODE === 'dev'
     ? (process.env.PORT = 5000)
     : (process.env.PORT = 3000);
-*/
-const PORT = process.env.PORT || 3000;
+
+//const PORT = process.env.PORT || 3000;
 
 // Passport config
 require('./config/passport')(passport);
